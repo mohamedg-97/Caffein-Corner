@@ -1,0 +1,199 @@
+/* === Global Styles === */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* === Carousel === */
+#carouselExample {
+    height: 90vh;
+    overflow: hidden;
+}
+.carousel-inner {
+    height: 100%;
+}
+.carousel-item {
+    height: 100%;
+}
+.carousel-item img {
+    height: 100%;
+    object-fit: cover;
+}
+
+/* === Font Styles === */
+.font {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* === User Info === */
+nav ul#user_info li i {
+    color: black;
+    font-size: 25px;
+    cursor: pointer;
+}
+nav ul#user_info li {
+    margin: 0px 10px;
+    position: relative;
+}
+nav ul#user_info li .badge {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    background-color: rgb(243, 49, 49);
+    padding-left: 2px;
+    padding-top: 2px;
+    color: #fff;
+    display: none;
+    border-radius: 50%;
+    bottom: 21px;
+    left: 17px;
+    font-size: 13px;
+}
+.navbar-collapse ul#user_info {
+    display: none;
+}
+
+/* === Authentication === */
+.signup, .login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(../images/back\ coffe4.PNG);
+    background-size: cover;
+    background-position: center;
+}
+.form-container {
+    background-color: rgba(212, 203, 203, 0.555);
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    max-width: 350px;
+    opacity: 0.7;
+}
+.signup .form-container .login-signup .span1:hover,
+.login .form-container .login-signup .span1:hover {
+    text-decoration: underline;
+}
+
+/* === Swiper Component === */
+.swiper-container {
+    width: 80%;
+    min-height: 400px;
+    overflow: hidden;
+}
+.swiper {
+    width: 100%;
+    height: auto;
+}
+.swiper-slide {
+    text-align: left;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* === Favorite Color === */
+.colorfav {
+    cursor: pointer;
+}
+
+/* === Total Price === */
+.totalprice {
+    display: none;
+}
+
+/* === Coffee Items === */
+.items_coffe {
+    position: absolute;
+    width: 210px;
+    transform: translate(-40px, 0);
+    background-color: #eaeaea;
+    top: 56px;
+    padding: 10px;
+    border: 2px solid #8B4513;
+    margin: 10px 0px 0px -100px;
+    display: none;
+}
+.items_coffe a {
+    display: block;
+    color: #000;
+    margin: auto;
+    padding: 0;
+    background-color: #8B4513;
+    width: 135px;
+    border-radius: 50%;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+}
+.totalprice .namber_price {
+    background-color: #e99330;
+    border-radius: 20%;
+    color: #ffffff;
+}
+
+/* === Footer === */
+footer {
+    background-color: #2c2c2c;
+    color: #fff;
+    padding: 2rem 0;
+}
+footer h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+footer ul {
+    padding: 0;
+    list-style-type: none;
+}
+footer ul li {
+    margin-bottom: 0.5rem;
+}
+footer ul li a {
+    color: #ddd;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+footer ul li a:hover {
+    color: #f5a623;
+}
+footer .social-icons a {
+    color: #fff;
+    font-size: 1.5rem;
+    margin-right: 1rem;
+    transition: color 0.3s ease;
+}
+footer .social-icons a:hover {
+    color: #f5a623;
+}
+footer .payment-icons a {
+    font-size: 2rem;
+    color: #fff;
+    margin-right: 1rem;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+footer .payment-icons a:hover {
+    transform: scale(1.2);
+    color: #f5a623;
+}
+footer .copyright {
+    font-size: 0.9rem;
+    margin-top: 2rem;
+    color: #aaa;
+}
+footer .copyright p {
+    margin: 0.3rem 0;
+}
